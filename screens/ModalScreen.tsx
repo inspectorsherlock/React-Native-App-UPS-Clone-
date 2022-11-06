@@ -10,7 +10,7 @@ import { RootStackParamList } from '../navigator/RootNavigator';
 import useCustomerOrders from '../hooks/useCustomerOrders';
 import DeliveryCard from '../components/DeliveryCard';
 
-type ModalScreenNavigationProp = CompositeNavigationProp<
+export type ModalScreenNavigationProp = CompositeNavigationProp<
 BottomTabNavigationProp<TabStackParamList>, 
 NativeStackNavigationProp<RootStackParamList, "MyModal">
 >;
