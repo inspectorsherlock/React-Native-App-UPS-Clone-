@@ -18,7 +18,8 @@ const CustomersScreen = () => {
     const tw = useTailwind();
     const navigation = useNavigation<CustomerScreenNavigationProp>();
     const [input, setInput] = useState<string>("");
-
+    const { loading, error, data } = useQuery(GET_CUSTOMERS);
+    
     useLayoutEffect(() => {
         navigation.setOptions({
             headerShown: false,
